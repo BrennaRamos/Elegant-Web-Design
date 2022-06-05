@@ -26,8 +26,6 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-
-
 </head>
 
 <body>
@@ -87,6 +85,7 @@
         -->
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
           <li><a class="getstarted scrollto" href="#about">Get Started</a></li>
+          <li><button id="language-switch" title="Pedro A. Gracia Fajardo, escudo de Manual de Imagen Institucional de la Administración General del Estado, CC0, via Wikimedia Commons"><img width="32" alt="Flag of Spain" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Flag_of_Spain.svg/32px-Flag_of_Spain.svg.png"></button></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -106,9 +105,15 @@
         <div class="carousel-item active" style="background-image: url(assets/img/slide/slide-1.jpg)">
           <div class="carousel-container">
             <div class="container">
-              <h2 class="animate__animated animate__fadeInDown">Elegant Web <span>Design</span></h2>
-              <p class="animate__animated animate__fadeInUp">Providing simple solutions for your website needs. Promote your business and reach a wider audience with a custom site.</p>
-              <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More About Us</a>
+              <h2 class="animate__animated animate__fadeInDown">Elegant Web Design</h2>
+              <p class="animate__animated animate__fadeInUp">
+                <span lang="en">Providing simple solutions for your website needs. Promote your business and reach a wider audience with a custom site.</span>
+                <span lang="es">Soluciones simples para su presencia en la red. Promueva su negocio y amplie su alcance con un sitio personalizado.</span>
+              </p>
+              <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">
+                <span lang="en">Read More About Us</span>
+                <span lang="es">Quienes Somos</span>
+              </a>
             </div>
           </div>
         </div>
@@ -117,16 +122,9 @@
         <div class="carousel-item" style="background-image: url(assets/img/slide/slide-2.jpg)">
           <div class="carousel-container">
             <div class="container">
-              <div lang="en">
                 <h2 class="animate__animated animate__fadeInDown">Affordable Rates</h2>
                 <p class="animate__animated animate__fadeInUp">An inexpensive yet properly built site, complete with your own custom domain. Optional features can be added onto your basic package.</p>
                 <a href="#services" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More About Services</a>
-              </div>
-              <div lang="es">
-                <h2 class="animate__animated animate__fadeInDown">Affordable Rates</h2>
-                <p class="animate__animated animate__fadeInUp">An inexpensive yet properly built site, complete with your own custom domain. Optional features can be added onto your basic package.</p>
-                <a href="#services" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More About Services</a>
-              </div>
             </div>
           </div>
         </div>
@@ -714,7 +712,7 @@
       </div> 
       -->
       <div class="copyright">
-        &copy; Copyright <strong><span>Elegant Web Design</span></strong>. All Rights Reserved
+        &copy; Copyright <strong>Elegant Web Design</strong>. All Rights Reserved
       </div>
       
     </div>
@@ -723,6 +721,7 @@
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>

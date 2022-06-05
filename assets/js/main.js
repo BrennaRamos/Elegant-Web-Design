@@ -1,9 +1,25 @@
-/**
-* Template Name: Green - v4.7.0
-* Template URL: https://bootstrapmade.com/green-free-one-page-bootstrap-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+$(document).ready(function() {
+  let lang = localStorage['lang'] == null ? 'en' : localStorage['lang'];
+  updateLang();
+
+  $('#language-switch').click(function() {
+    lang = localStorage['lang'] == null ? 'en' : localStorage['lang'];
+    lang = lang == 'en' ? 'es' : 'en';
+    updateLang();
+    console.log("test");
+  });
+
+  function updateLang() {
+    $('span').each(function(i, obj) {
+      if ($(this).attr('lang') != lang) {
+        $(this).hide();
+      } else $(this).show();
+    });
+  }
+});
+
+
+
 (function() {
   "use strict";
 
