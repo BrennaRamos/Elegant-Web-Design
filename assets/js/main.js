@@ -2,18 +2,20 @@ $(document).ready(function() {
   let lang = localStorage['lang'] == null ? 'en' : localStorage['lang'];
   updateLang();
 
-  $('#language-switch').on("click", function() {
+  $('#language-switch').click(function() {
     lang = localStorage['lang'] == null ? 'en' : localStorage['lang'];
     lang = lang == 'en' ? 'es' : 'en';
+    localStorage['lang'] = lang;
     updateLang();
-    console.log("test");
   });
 
   function updateLang() {
     $('span').each(function(i, obj) {
       if ($(this).attr('lang') != lang) {
         $(this).hide();
-      } else $(this).show();
+      } else { 
+        $(this).show();
+      }
     });
   }
 });
