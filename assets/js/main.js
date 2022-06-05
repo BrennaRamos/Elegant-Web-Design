@@ -2,7 +2,7 @@ $(document).ready(function() {
   let lang = localStorage['lang'] == null ? 'en' : localStorage['lang'];
   updateLang();
 
-  $('#language-switch').click(function() {
+  $('#language-switch').on("click", function() {
     lang = localStorage['lang'] == null ? 'en' : localStorage['lang'];
     lang = lang == 'en' ? 'es' : 'en';
     updateLang();
