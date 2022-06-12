@@ -28,7 +28,16 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
-  
+  <!-- Quriobot Embedding -->
+  <script type="text/javascript">
+    if (!Array.isArray(window.qbOptions)) {
+      window.qbOptions = []
+    }
+    window.qbOptions.push({"baseUrl":"https://botsrv2.com","use":"KlXDVbB94JEYdgQL/MnyjZrgao2bdv40x"});
+  </script>
+  <script type="text/javascript" src="https://static.botsrv2.com/website/js/widget2.a809756a.min.js" integrity="sha384-Iv7lUaODrIaOwjdzRHtcol1FZdWZS2rZ7OCwAowk3o+HQbQAwHLYjaVhhzBeAEa6" crossorigin="anonymous" defer data-no-minify="1"></script>
+  <!-- End Quriobot Embedding -->
+
 </head>
 
 <body>
@@ -39,7 +48,7 @@
       <div class="contact-info d-flex align-items-center">
         <div class="contact-info d-flex align-items-center m-5">
         <a href="mailto:elegantwebdesign142@gmail.com" target=”_blank”> 
-          <span class=" bi bi-envelope-fill d-none d-sm-none d-md-none d-lg-block"> elegantwebdesign142@gmail.com</span>
+          <span class="bi bi-envelope-fill d-none d-sm-none d-md-none d-lg-block"> elegantwebdesign142@gmail.com</span>
           <span class="bi bi-envelope-fill d-block d-sm-block d-md-block d-lg-none"></span>
         </a>
         </div>
@@ -93,6 +102,9 @@
           <li><a class="nav-link scrollto" href="#services">
             <span lang="en">Services</span>
             <span lang="es">Servicios</span></a></li>
+            <li><a class="nav-link scrollto" href="#pricing">
+              <span lang="en">Pricing</span>
+              <span lang="es">Precios</span></a></li>
           <!-- <li><a class="nav-link scrollto " href="#portfolio">
             <span lang="en">Gallery</span>
             <span lang="es">Galeria</span></a></li> -->
@@ -187,16 +199,16 @@
           <div class="carousel-container">
             <div class="container">
               <h2 class="animate__animated animate__fadeInDown">
-                <span lang="en">Flat Rate Maintenance Fees</span>
-                <span lang="es">Tarifas Fijas de Mantenimiento</span>
+                <span lang="en">Flat Rate Pricing</span>
+                <span lang="es">Precios Fijos</span>
                 </h2>
               <p class="animate__animated animate__fadeInUp">
-                <span lang="en">Need to make changes to the content of your site? Varying flat rate maintenances fees help facilitate these updates.</span>
-                <span lang="es">¿Necesita hacer cambios a su sitio? Varias tarifas fijas de mantenimiento facilitan sus actualizaciones.</span>
+                <span lang="en">Varying flat rate packages make it easy to get started. Custom packages available upon request.</span>
+                <span lang="es">Varios planes de precios fijos facilita el comienzo de su sitio. Planes personalizados disponibles.</span>
               </p>
-              <a href="#contact" class="btn-get-started animate__animated animate__fadeInUp scrollto">
-                <span lang="en">Contact Tech Support</span>
-                <span lang="es">Contacte Servicios al Cliente</span>
+              <a href="#pricing" class="btn-get-started animate__animated animate__fadeInUp scrollto">
+                <span lang="en">See Pricing</span>
+                <span lang="es">Vea Precios</span>
               </a>
             </div>
           </div>
@@ -440,11 +452,11 @@
               </div>
               <span lang="en">
                 <h4><a>Domain</a></h4>
-              <p>Request a custom domain so customers can find you more easily. Matching your company name is our recommendation!</p>
+              <p>Request a custom domain so customers can find you more easily. Pricing varies by domain availability.</p>
               </span>
               <span lang="es">
                 <h4><a>Dominio</a></h4>
-                <p>Solicite un dominio de la red fácil de recordar para la conveniencia de sus clientes. Recomendamos emparejarlo al nombre de su negocio.</p>
+                <p>Solicite un dominio de la red fácil de recordar para la conveniencia de sus clientes. Costo varia a base de disponibilidad del dominio.</p>
               </span>
             </div>
           </div>
@@ -529,6 +541,190 @@
 
       </div>
     </section><!-- End Services Section -->
+
+    <!-- ======= Pricing Grid Section ======= -->
+    <section id="pricing" class="featured-services">
+      <div class="container">
+        <div class="section-title">
+          <span lang="en">
+            <h2>Flat-Rate Annual Pricing</h2>
+            <p>Custom plans at varying flat rates also available upon request. Contact us for more information.</p>
+          </span>
+          <span lang="es">
+            <h2>Precios Fijos Anuales</h2>
+            <p>Planes personalizados a precios fijos variantes disponibles a pedido. Contáctenos para más información.</p>
+          </span>  
+        </div>
+
+        <div class="row justify-content-center">
+        	<div class="col-lg-12">
+        	  <table class="icon table table-bordered table-hover text-center align-text-bottom">
+        	    <thead>
+        	      <tr>
+                  <th scope="col"><span lang="en">Included in Annual Plan:</span> <span lang="es">Incluido en Plan Anual:</span></th>
+        	        <th scope="col"><span lang="en">Premium</span> <span lang="es">Premium</span></th>
+        	        <!--<th scope="col"><span lang="en">Standard</span> <span lang="es">Standard</span></th>-->
+        	        <th scope="col"><span lang="en">Basic</span> <span lang="es">Basic</span></th>
+
+        	      <!--  <th scope="col"><span lang="en">Yearly Plans</span> <span lang="es">Planes Anuales</span></th>
+        	        <th scope="col"><span lang="en">Website</span> <span lang="es">Página Web</span></th>
+        	        <th scope="col"><span lang="en">Domain*</span> <span lang="es">Dominio*</span></th>
+        	        <th scope="col"><span lang="en">Email</span> <span lang="es">Correo Electrónico</span></th>
+                  <th scope="col"><span lang="en">Social Media</span> <span lang="es">Redes Sociales</span></th>
+                  <th scope="col"><span lang="en">Logo</span> <span lang="es">Logo</span></th>
+                  <th scope="col"><span lang="en">Bot Chat</span> <span lang="es">Chat en Vivo</span></th>
+                  <th scope="col"><span lang="en">Free Updates</span> <span lang="es">Actualizaciónes Gratis</span></th>
+                  <th scope="col"><span lang="en">Each Update</span> <span lang="es">Cada Actualización</span></th>
+                  <th scope="col"><span lang="en">Bandwidth</span> <span lang="es">Bandwidth</span></th>-->
+        	      </tr>
+        	    </thead>
+        	    <tbody>
+                <tr>
+                  <th scope="row"><span lang="en">Prices</span> <span lang="es">Precios</span></th>
+                  <td class="table-success"> <span lang="en">$599 USD</span> <span lang="es">$599 USD</span> </td>
+                  <!--<td class="table-success"> <span lang="en">$449 USD</span> <span lang="es">$449 USD</span> </td>-->
+                  <td class="table-success"> <span lang="en">$299 USD</span> <span lang="es">$299 USD</span> </td>
+                </tr>
+                <tr>
+                  <th scope="row"><span lang="en">Website</span> <span lang="es">Página Web</span></th>
+                    <td><i class="bi bi-check-circle-fill"></i></td>
+        	          <!--<td><i class="bi bi-check-circle-fill"></i></td>-->
+                    <td><i class="bi bi-check-circle-fill"></i></td>
+                </tr>
+                <tr>
+                  <th scope="row"><span lang="en">Domain*</span> <span lang="es">Dominio*</span></th>
+                    <td><i class="bi bi-currency-dollar"></i></td>
+        	          <!--<td><i class="bi bi-currency-dollar"></i></td>-->
+                    <td><i class="bi bi-currency-dollar"></i></td>
+                </tr>
+                <tr>
+                  <th scope="row"><span lang="en">Bilingual Site (EN/ES)</span> <span lang="es">Sitio Bilingüe (ES/EN)</span></th>
+                    <td><i class="bi bi-check-circle-fill"></i></td>
+        	          <!--<td><i class="bi bi-check-circle-fill"></i></td>-->
+                    <td><i class="bi bi-check-circle-fill"></i></td>
+                </tr>
+                <tr>
+                  <th scope="row"><span lang="en">Image Gallery</span> <span lang="es">Galería de Imagenes</span></th>
+                    <td><i class="bi bi-check-circle-fill"></i></td>
+        	          <!--<td><i class="bi bi-check-circle-fill"></i></td>-->
+                    <td><i class="bi bi-check-circle-fill"></i></td>
+                </tr>
+                <tr>
+                  <th scope="row"><span lang="en">Contact Form</span> <span lang="es">Formulario de Contacto</span></th>
+                    <td><i class="bi bi-check-circle-fill"></i></td>
+        	          <!--<td><i class="bi bi-check-circle-fill"></i></td>-->
+                    <td><i class="bi bi-check-circle-fill"></i></td>
+                </tr>
+                <tr>
+                  <th scope="row"><span lang="en">Email</span> <span lang="es">Correo Electrónico</span></th>
+                    <td><i class="bi bi-check-circle-fill"></i></td>
+        	          <!--<td><i class="bi bi-x"></i></td>-->
+                    <td><i class="bi bi-x"></i></td>
+                </tr>
+                <tr>
+                  <th scope="row"><span lang="en">Social Media</span> <span lang="es">Redes Sociales</span></th>
+                    <td><i class="bi bi-check-circle-fill"></i></td>
+        	          <!--<td><i class="bi bi-check-circle-fill"></i></td>-->
+                    <td><i class="bi bi-x"></i></td>
+                </tr>
+                <tr>
+                  <th scope="row"><span lang="en">Multimedia Gallery</span> <span lang="es">Galería de Multimedia</span></th>
+                    <td> <span lang="en">$49 USD</span> <span lang="es">$49 USD</span> </td>
+                    <!--<td> <span lang="en">$49 USD</span> <span lang="es">$49 USD</span> </td>-->
+                    <td> <span lang="en">$49 USD</span> <span lang="es">$49 USD</span> </td>
+                </tr>
+                <tr>
+                  <th scope="row"><span lang="en">Logo</span> <span lang="es">Logo</span></th>
+                    <td> <span lang="en">$49 USD</span> <span lang="es">$49 USD</span> </td>
+                    <!--<td> <span lang="en">$49 USD</span> <span lang="es">$49 USD</span> </td>-->
+                    <td> <span lang="en">$49 USD</span> <span lang="es">$49 USD</span> </td>
+                </tr>
+                <tr>
+                  <th scope="row"><span lang="en">Bot Chat</span> <span lang="es">Chat de Bot</span></th>
+                    <td> <span lang="en">$129 USD</span> <span lang="es">$129 USD</span> </td>
+                    <!--<td> <span lang="en">$129 USD</span> <span lang="es">$129 USD</span> </td>-->
+                    <td> <span lang="en">$129 USD</span> <span lang="es">$129 USD</span> </td>
+                </tr>
+                <tr>
+                  <th scope="row"><span lang="en">Free Updates</span> <span lang="es">Actualizaciónes Gratis</span></th>
+                    <td> <span lang="en">3</span> <span lang="es">3</span></td>
+        	          <!--<td> <span lang="en">2</span> <span lang="es">2</span> </td>-->
+                    <td> <span lang="en">1</span> <span lang="es">1</span> </td>
+                </tr>
+                <tr>
+                  <th scope="row"><span lang="en">Each Update</span> <span lang="es">Cada Actualización</span></th>
+                    <td> <span lang="en">Varies</span> <span lang="es">Varía</span> </td>
+                    <!--<td> <span lang="en">Varies</span> <span lang="es">Varía</span> </td>-->
+                    <td> <span lang="en">Varies</span> <span lang="es">Varía</span> </td>
+                </tr>
+                <tr>
+                  <th scope="row"><span lang="en">Bandwidth</span> <span lang="es">Bandwidth</span></th>
+                  <td> <span lang="en">No Limit</span> <span lang="es">Sin Límite</span> </td>
+                  <!--<td> <span lang="en">No Limit</span> <span lang="es">Sin Límite</span> </td>-->
+                  <td> <span lang="en">No Limit</span> <span lang="es">Sin Límite</span> </td>
+                </tr>
+        	      <!--<tr>
+        	        <th scope="row">Premium - $400 USD</th>
+                  <td><i class="bi bi-check-circle-fill"></i></td>
+        	        <td><i class="bi bi-check-circle-fill"></i></td>
+                  <td><i class="bi bi-check-circle-fill"></i></td>
+                  <td><i class="bi bi-check-circle-fill"></i></td>
+                  <td><i class="bi bi-check-circle-fill"></i></td>
+                  <td><i class="bi bi-check-circle-fill"></i></td>
+        	        <td> <span lang="en">3</span> <span lang="es">3</span></td>
+                  <td> <span lang="en">$10 USD</span> <span lang="es">$10 USD</span> </td>
+                  <td> <span lang="en">No Limit</span> <span lang="es">Sin Límite</span> </td>       
+        	      </tr>
+        	      <tr>
+        	        <th scope="row">Standard - $250 USD</th>
+        	        <td><i class="bi bi-check-circle-fill"></i></td>
+        	        <td><i class="bi bi-check-circle-fill"></i></td>
+                  <td><i class="bi bi-check-circle-fill"></i></td>
+                  <td><i class="bi bi-check-circle-fill"></i></td>
+                  <td><i class="bi bi-x"></i></td>
+                  <td><i class="bi bi-x"></i></td>
+        	        <td> <span lang="en">2</span> <span lang="es">2</span> </td>
+                  <td> <span lang="en">$10 USD</span> <span lang="es">$10 USD</span> </td>
+                  <td> <span lang="en">No Limit</span> <span lang="es">Sin Límite</span> </td>       
+        	      </tr>
+                <tr>
+        	        <th scope="row">Basic - $150 USD</th>
+        	        <td><i class="bi bi-check-circle-fill"></i></td>
+        	        <td><i class="bi bi-check-circle-fill"></i></td>
+                  <td><i class="bi bi-x"></i></td>
+        	        <td><i class="bi bi-x"></i></td>
+                  <td><i class="bi bi-x"></i></td>
+        	        <td><i class="bi bi-x"></i></td>
+        	        <td> <span lang="en">1</span> <span lang="es">1</span> </td>
+                  <td> <span lang="en">$10 USD</span> <span lang="es">$10 USD</span> </td>
+                  <td> <span lang="en">No Limit</span> <span lang="es">Sin Límite</span> </td>                  
+        	      </tr> -->
+        	      
+                <!--<tr>
+        	        <th scope="row">Custom</th>
+        	        <td><i class="bi bi-check-circle-fill"></i></td>
+        	        <td><i class="bi bi-app"></i></td>
+                  <td><i class="bi bi-app"></i></td>
+                  <td><i class="bi bi-app"></i></td>
+                  <td><i class="bi bi-app"></i></td>
+        	        <td><i class="bi bi-app"></i></td>
+        	      </tr>-->
+        	    </tbody>
+        	  </table>
+            <div class="section-title">
+              <span lang="en">
+                <p>*Cost of domain name varies based off of availability and other factors.</p>
+              </span>
+              <span lang="es">
+                <p>*Costo del dominio de sitio varia a base de la disponibilidad y otros factores.</p>
+              </span>  
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Pricing Grid Section -->
 
     <!-- ======= Cta Section ======= -->
     <section id="cta" class="cta">
