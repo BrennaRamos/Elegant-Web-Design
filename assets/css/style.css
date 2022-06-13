@@ -1255,3 +1255,86 @@ section {
 /*--------------------------------------------------------------
 # Custom CSS
 --------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+# Ribbons
+--------------------------------------------------------------*/
+
+.sash tr td { 
+  position: relative;
+  overflow: hidden;
+  width: 200px;
+  height: 100px;
+  
+}
+.sash tr td.prova:after{
+  content: attr(data-ribbon);
+  position: absolute;
+  width: 90px;
+  height: 40px;
+  background: #428bca;
+  color: white;
+  top: -5px;
+  text-align: center ;
+  line-height: 50px;
+  right: -34px;
+  transform: rotate(45deg);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*--------------------------------------------------------------
+# Price Tag
+--------------------------------------------------------------*/
+
+.card-price {
+	display: inline-block;
+  
+  width: auto;
+	height: 38px;
+	
+	background-color: #ffbb2c;
+	-webkit-border-radius: 3px 4px 4px 3px;
+	-moz-border-radius: 3px 4px 4px 3px;
+	border-radius: 3px 4px 4px 3px;
+	
+	border-left: 1px solid #ffbb2c;
+
+	/* This makes room for the triangle */
+	margin-left: 19px;
+	
+	position: relative;
+	
+	color: #444444;
+	font-weight: 300;
+	font-size: 22px;
+	line-height: 38px;
+
+	padding: 0 10px 0 10px;
+}
+
+/* Makes the triangle */
+.card-price:before {
+	content: "";
+	position: absolute;
+	display: block;
+	left: -19px;
+	width: 0;
+	height: 0;
+	border-top: 19px solid transparent;
+	border-bottom: 19px solid transparent;
+	border-right: 19px solid #ffbb2c;
+}
+
+/* Makes the circle */
+.card-price:after {
+	content: "";
+	background-color: white;
+	border-radius: 50%;
+	width: 4px;
+	height: 4px;
+	display: block;
+	position: absolute;
+	left: -9px;
+	top: 17px;
+}
